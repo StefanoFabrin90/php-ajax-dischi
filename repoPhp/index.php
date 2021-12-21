@@ -14,7 +14,9 @@ require_once __DIR__ . '/partials/data.php';
 <body>
     <!-- hedaer -->
     <header>
-        <h1>LOGO</h1>
+        <div class="title">
+            <h1>PHP</h1>
+        </div>
     </header>
 
     <!-- main -->
