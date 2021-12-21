@@ -14,20 +14,27 @@
     <div id="app">
         <!-- header-->
         <header>
-            <h1>test</h1>
+            <h1>LOGO</h1>
         </header>
 
         <!-- main -->
         <main>
             <section class="container">
-                <ul>
-                    <li
-                        v-for="(disco, index) in dischi"
-                        :key="`disco-${index}`"
-                    >
-                        {{ disco.title }}
-                    </li>
-                </ul>
+                <div 
+                    class="card"
+                    v-for="(disco, index) in dischi"
+                    :key="`disco-${index}`"
+                >
+                    <div class="poster">
+                        <img :src="disco.poster" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> {{ disco.title }}</h3>
+                        <p>{{ disco.author }}</p>
+                        <p>{{ disco.year }}</p>
+                        <p>{{ disco.genre }}</p>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
