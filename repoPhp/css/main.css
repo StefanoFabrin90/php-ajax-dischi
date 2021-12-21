@@ -5,8 +5,59 @@
   font-family: sans-serif;
 }
 
+body {
+  background-color: #182d3d;
+  color: white;
+}
+
+header {
+  background-color: #132431;
+}
+
+/* main {
+  background-color: #182d3d;
+} */
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.container .card {
+  width: 300px;
+  /* height: 500px; */
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  background-color: black;
+  color: white;
+}
+
+.container .card .poster {
+  width: 200px;
+}
+
+.poster img {
+  width: 100%;
+}
+
+.card .text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card .text h3 {
+  font-size: 20px;
+}
+
+.card .text p {
+  font-size: 15px;
+  margin: 15px 0px;
 }

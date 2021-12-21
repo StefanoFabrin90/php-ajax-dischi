@@ -15,20 +15,25 @@ require_once __DIR__ . '/partials/data.php';
 <body>
     <!-- hedaer -->
     <header>
-        <h1>test</h1>
+        <h1>LOGO</h1>
     </header>
 
     <!-- main -->
     <main>
         <section class="container">
-            <h1>test</h1>
             <?php 
             foreach($database as $item) : ?>
-                <img src= <?php echo "{$item['poster']}"; ?> alt="poster">
-                <p> <?php echo "{$item['title']}"; ?></p>
-                <p> <?php echo "{$item['author']}"; ?></p>
-                <p> <?php echo "{$item['year']}"; ?></p>
-                <p> <?php echo "{$item['genre']}"; ?></p>
+                <div class="card">
+                    <div class="poster">
+                        <img src= <?php echo "{$item['poster']}"; ?> alt="poster">
+                    </div>
+                    <div class="text">
+                        <h3> <?php echo "{$item['title']}"; ?></h3>
+                        <p> <?php echo "{$item['author']}"; ?></p>
+                        <p> <?php echo "{$item['year']}"; ?></p>
+                        <p> <?php echo "{$item['genre']}"; ?></p>
+                    </div>
+                </div>
             <?php endforeach; ?>
         </section>
     </main>
